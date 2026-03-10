@@ -15,17 +15,17 @@ Place your raw CSV files in `data/raw/`:
 ```
 energy-mlops/
 ├── data/
-│   ├── raw/            ← Place your CSVs here
-│   └── processed/      ← Scaler, PCA, and saved models written here
+│   ├── raw/            
+│   └── processed/     
 ├── src/
-│   ├── ingest.py       ← Load CSVs
-│   ├── preprocess.py   ← col_filter, PCA, StandardScaler, label encoding
-│   ├── train.py        ← GridSearchCV + BayesSearchCV for GPC, SVM, RF
-│   ├── evaluate.py     ← Final model scoring on test set
-│   └── predict.py      ← Inference using saved artifacts
+│   ├── ingest.py       
+│   ├── preprocess.py   
+│   ├── train.py        
+│   ├── evaluate.py     
+│   └── predict.py      
 ├── api/
-│   └── main.py         ← FastAPI REST endpoint
-├── run.py              ← Full pipeline entrypoint
+│   └── main.py         
+├── run.py              
 └── requirements.txt
 ```
 
